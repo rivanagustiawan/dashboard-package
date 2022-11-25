@@ -24,7 +24,7 @@
     "extra" : {
         "laravel": {
             "providers": [
-                "Rivan\\Dashboard\\DasboardServiceProvider"
+                "Rivan\\Dashboard\\DashboardServiceProvider"
             ]
         }
     }
