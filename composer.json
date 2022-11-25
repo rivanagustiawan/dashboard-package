@@ -1,0 +1,31 @@
+{
+    "name": "rivan/dashboard",
+    "description": "This for dashboard",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rivan\\Dashboard\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "you@example.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Rivan\\Dashboard\\": "src/" 
+        }
+    },
+    "extra" : {
+        "laravel": {
+            "providers": [
+                "Rivan\\Dashboard\\DasboardServiceProvider"
+            ]
+        }
+    }
+}
