@@ -14,8 +14,8 @@ class DashboardController extends Controller
         $data = HTTP::withHeaders([
             'Accept' => 'application/json',
             'Authorization' => 'Bearer '.Session::get('token'),
-        ])->get('http://127.0.0.1:8000/api/barang-low-stock');
-
+        ])->get('http://127.0.0.1:8000/api/barang/low/stok');
+        
         return view('dashboard::dashboard', [
             'data' => $data['data']
         ]);
@@ -28,7 +28,7 @@ class DashboardController extends Controller
         $data = HTTP::withHeaders([
             'Accept' => 'application/json',
             'Authorization' => 'Bearer '.Session::get('token'),
-        ])->get('http://127.0.0.1:8000/api/barang-by-idcabang/'.$request['id']);
+        ])->get('http://127.0.0.1:8000/api/barang/cabang/'.$request['id']);
 
         return view('dashboard::list-barang', [
             'data' => $data['data_barang']
